@@ -1,0 +1,13 @@
+onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CountriesDetails(
+                                  name: countries[index]["name"],
+                                  continent: countries[index]["continent"],
+                                  emoji: countries[index]["emoji"],
+                                  native: countries[index]["native"],
+                                  phone: countries[index]["phone"],
+                                  languages: countries[index]["languages"],
+                                )));
+                  },
